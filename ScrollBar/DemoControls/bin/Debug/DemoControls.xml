@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoControls</name>
+    </assembly>
+    <members>
+        <member name="T:DemoControls.Orientation">
+            <summary>
+            方向
+            </summary>
+        </member>
+        <member name="F:DemoControls.Orientation.Horizontal_LR">
+            <summary>
+            水平方向（从左到右）
+            </summary>
+        </member>
+        <member name="F:DemoControls.Orientation.Horizontal_RL">
+            <summary>
+            水平方向（从右到左）
+            </summary>
+        </member>
+        <member name="F:DemoControls.Orientation.Vertical_BT">
+            <summary>
+            垂直方向（从上到上）
+            </summary>
+        </member>
+        <member name="F:DemoControls.Orientation.Vertical_TB">
+            <summary>
+            垂直方向（从上到下）
+            </summary>
+        </member>
+        <member name="T:DemoControls.MouseStatus">
+            <summary>
+            鼠标状态
+            </summary>
+        </member>
+        <member name="F:DemoControls.MouseStatus.Enter">
+            <summary>
+            鼠标进入
+            </summary>
+        </member>
+        <member name="F:DemoControls.MouseStatus.Leave">
+            <summary>
+            鼠标离开
+            </summary>
+        </member>
+        <member name="F:DemoControls.MouseStatus.Down">
+            <summary>
+            鼠标按下
+            </summary>
+        </member>
+        <member name="F:DemoControls.MouseStatus.Up">
+            <summary>
+            鼠标按下释放
+            </summary>
+        </member>
+        <member name="T:DemoControls.OrientationScrollBar">
+            <summary>
+            滚动条方向
+            </summary>
+        </member>
+        <member name="F:DemoControls.OrientationScrollBar.Horizontal">
+            <summary>
+            水平方向
+            </summary>
+        </member>
+        <member name="F:DemoControls.OrientationScrollBar.Vertical">
+            <summary>
+            垂直方向
+            </summary>
+        </member>
+        <member name="T:DemoControls.LEventArgs">
+            <summary>
+            事件数据
+            </summary>
+        </member>
+        <member name="M:DemoControls.LEventArgs.#ctor(System.Object)">
+            <summary>
+            事件数据
+            </summary>
+            <param name="value">值</param>
+        </member>
+        <member name="P:DemoControls.LEventArgs.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:DemoControls.LScrollEventArgs">
+            <summary>
+            滚动条事件数据
+            </summary>
+        </member>
+        <member name="M:DemoControls.LScrollEventArgs.#ctor(System.Single,System.Single)">
+            <summary>
+            滚动条事件数据
+            </summary>
+            <param name="sliderPosition">滑块距顶部（垂直）/左侧（横向）位置</param>
+            <param name="showPosition">显示位置（正数）</param>
+        </member>
+        <member name="P:DemoControls.LScrollEventArgs.SliderPosition">
+            <summary>
+            滑块距顶部（垂直）/左侧（横向）位置
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollEventArgs.ShowPosition">
+            <summary>
+            显示位置（正数）
+            </summary>
+        </member>
+        <member name="T:DemoControls.LScrollBar.LScrolledEventHandler">
+            <summary>
+            委托
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:DemoControls.LScrollBar.LScrolled">
+            <summary>
+            发生滚动时引发的事件
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_BarColor">
+            <summary>
+            背景条颜色
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_SliderColor">
+            <summary>
+            滑块颜色
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_SliderMouseInColor">
+            <summary>
+            鼠标进入时滑块颜色<para>默认：绿</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_IsRound">
+            <summary>
+            是否是圆角<para>默认：是</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_Orientation">
+            <summary>
+            方向<para>默认：水平，从左到右</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_BarSize">
+            <summary>
+            滑条高度（水平）/宽度（垂直）
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_Position">
+            <summary>
+            滑块位置
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_PageSize">
+            <summary>
+            显示长度/每页长度
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_DocSize">
+            <summary>
+            文档长度
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_SliderMoveRange">
+            <summary>
+            滑块可移动距离
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_SliderLength">
+            <summary>
+            滑块长度
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_ShowPosition">
+            <summary>
+            显示位置（正数）
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_ScrollInterval">
+            <summary>
+            鼠标滚轮和上下左右键每次移动距离（对文档视图言）<para>默认：10</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LScrollBar.L_SliderMiniSize">
+            <summary>
+            滑块最小长度<para>默认：20</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_BarColor">
+            <summary>
+            背景条颜色
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_SliderColor">
+            <summary>
+            滑块颜色
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_IsRound">
+            <summary>
+            是否是圆角<para>默认：是</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_Minimum">
+            <summary>
+            最小值<para>范围：大于等于0</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_Maximum">
+            <summary>
+            最大值
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_Value">
+            <summary>
+            当前值
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_Orientation">
+            <summary>
+            方向<para>默认：水平，从左到右</para>
+            </summary>
+        </member>
+        <member name="P:DemoControls.LTrackBar.L_BarSize">
+            <summary>
+            滑条高度（水平）/宽度（垂直）
+            </summary>
+        </member>
+        <member name="T:DemoControls.LTrackBar.LValueChangedEventHandler">
+            <summary>
+            委托
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="E:DemoControls.LTrackBar.LValueChanged">
+            <summary>
+            值发生改变时引发的事件
+            </summary>
+        </member>
+    </members>
+</doc>
